@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bulan</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="cur"></div>
+
+<!-- NAVIGASI -->
+<nav>
+  <span class="nav-logo">☽ LUNA</span>
+  <div class="nav-links">
+    <a href="#data">Data</a>
+    <a href="#fase">Fase</a>
+    <a href="#pengaruh">Pengaruh</a>
+    <a href="#gerhana">Gerhana</a>
+    <a href="#eksplorasi">Eksplorasi</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg">
+    <div class="big-moon"><div class="moon-texture"></div></div>
+  </div>
+  <div class="hero-text">
+    <p class="hero-tag">Ensiklopedia Interaktif</p>
+    <h1 class="hero-h1">SA<em>TE</em>LIT<br>ALAMI<br>BUMI</h1>
+  </div>
+  <div class="hero-scroll">SCROLL</div>
+</section>
+
+<!-- INTRO -->
+<section id="intro">
+  <div class="container">
+    <div class="intro-grid">
+      <div>
+        <div class="intro-number">01</div>
+        <h2 class="intro-heading">Apa itu Bulan?</h2>
+        <p class="intro-body">
+          Bulan adalah <strong>satu-satunya satelit alami Bumi</strong> — benda langit terbesar dan paling terang yang tampak di langit malam. Dengan diameter sekitar 3.474 km, Bulan mengorbit Bumi pada jarak rata-rata 384.400 km.<br><br>
+          Bulan tidak menghasilkan cahaya sendiri. Yang kita lihat adalah <strong>pantulan sinar Matahari</strong> dari permukaannya. Permukaannya yang berbatu dan penuh kawah mencerminkan sekitar 12% cahaya yang mengenainya.<br><br>
+          Diperkirakan Bulan terbentuk sekitar <strong>4,5 miliar tahun lalu</strong> dari tabrakan dahsyat antara Bumi purba dan sebuah proto-planet sebesar Mars yang disebut <em>Theia</em>.
+        </p>
+      </div>
+      <div class="highlight-box">
+        <span class="hb-label">Fakta Cepat</span>
+        <p class="hb-text">Bulan adalah benda angkasa kelima terbesar di tata surya. Rasio massanya terhadap Bumi (1:81) adalah yang terbesar di antara semua pasangan planet–satelit di tata surya, sehingga sebagian ilmuwan menyebut sistem Bumi–Bulan sebagai <strong>"planet ganda."</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DATA FISIK -->
+<section id="data">
+  <div class="container">
+    <div class="section-header reveal">
+      <div>
+        <span class="s-label">02 — Karakteristik Fisik</span>
+        <h2 class="s-title">Data & Statistik</h2>
+      </div>
+    </div>
+    <div class="data-grid reveal">
+      <div class="data-cell">
+        <span class="data-val">3.474 km</span>
+        <span class="data-key">Diameter</span>
+        <p class="data-note">Sekitar 27% diameter Bumi. Cukup besar untuk menciptakan pengaruh gravitasi yang signifikan.</p>
+      </div>
+      <div class="data-cell">
+        <span class="data-val">384.400 km</span>
+        <span class="data-key">Jarak Rata-rata dari Bumi</span>
+        <p class="data-note">Bervariasi antara 356.500 km (perigee) hingga 406.700 km (apogee).</p>
+      </div>
+      <div class="data-cell">
+        <span class="data-val">7,34 × 10²² kg</span>
+        <span class="data-key">Massa</span>
+        <p class="data-note">Sekitar 1,2% massa Bumi. Cukup besar untuk menstabilkan kemiringan sumbu Bumi.</p>
+      </div>
+      <div class="data-cell">
+        <span class="data-val">1,62 m/s²</span>
+        <span class="data-key">Gravitasi Permukaan</span>
+        <p class="data-note">Hanya 1/6 gravitasi Bumi. Seorang yang beratnya 60 kg akan terasa hanya 10 kg di Bulan.</p>
+      </div>
+      <div class="data-cell">
+        <span class="data-val">−173 / +127 °C</span>
+        <span class="data-key">Rentang Suhu</span>
+        <p class="data-note">Perbedaan ekstrem karena tidak ada atmosfer yang meratakan suhu seperti di Bumi.</p>
+      </div>
+      <div class="data-cell">
+        <span class="data-val">29,5 hari</span>
+        <span class="data-key">Siklus Sinodis (Fase)</span>
+        <p class="data-note">Periode lengkap dari Bulan Baru ke Bulan Baru berikutnya.</p>
+      </div>
+      <div class="data-cell">
+        <span class="data-val">1.737 km</span>
+        <span class="data-key">Jari-jari</span>
+        <p class="data-note">Volume total Bulan sekitar 2,19 × 10¹⁰ km³.</p>
+      </div>
+      <div class="data-cell">
+        <span class="data-val">0,12</span>
+        <span class="data-key">Albedo (Reflektivitas)</span>
+        <p class="data-note">Hanya memantulkan 12% cahaya Matahari — lebih gelap dari aspal.</p>
+      </div>
+      <div class="data-cell">
+        <span class="data-val">Nihil</span>
+        <span class="data-key">Atmosfer</span>
+        <p class="data-note">Bulan hanya memiliki eksosfer sangat tipis. Tidak ada cuaca, angin, atau hujan.</p>
+      </div>
+    </div>
+
+    <!-- LAPISAN BULAN -->
+    <div style="margin-top:4rem;" class="reveal">
+      <span class="s-label" style="margin-bottom:1.5rem;display:block;">Struktur Lapisan</span>
+      <div class="layer-diagram">
+        <div class="layer-vis">
+          <div class="moon-texture"></div>
+          <span class="layer-label-vis ll1">INTI</span>
+          <span class="layer-label-vis ll2">MANTEL</span>
+          <span class="layer-label-vis ll3">KERAK</span>
+        </div>
+        <div class="layer-info">
+          <div class="layer-item">
+            <div class="li-name"><div class="li-dot" style="background:#e4d89a;"></div>Kerak (Crust)</div>
+            <p class="li-text">Lapisan terluar setebal 50–150 km. Terbuat dari mineral feldspar, anortosit, dan basalt. Permukaannya dipenuhi kawah dari hantaman meteorit selama miliaran tahun.</p>
+            <span class="li-detail">Tebal: 50–150 km · Komposisi: anortosit, basalt</span>
+          </div>
+          <div class="layer-item">
+            <div class="li-name"><div class="li-dot" style="background:#c8b96a;"></div>Mantel (Mantle)</div>
+            <p class="li-text">Lapisan terbesar Bulan, tersusun dari batuan silikat padat kaya olivin dan piroksen. Mantel atas diduga sempat cair (magma ocean) di masa awal pembentukan Bulan.</p>
+            <span class="li-detail">Tebal: ~1.300 km · Komposisi: olivin, piroksen</span>
+          </div>
+          <div class="layer-item">
+            <div class="li-name"><div class="li-dot" style="background:#6b5f30;"></div>Inti (Core)</div>
+            <p class="li-text">Inti Bulan kecil — hanya ~20% radius total. Terdiri dari inti luar cair (besi-sulfida) dan inti dalam padat (besi murni). Menjelaskan mengapa Bulan tidak punya medan magnet global kuat.</p>
+            <span class="li-detail">Radius: ~330 km · Komposisi: besi, nikel, sulfida</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FASE BULAN -->
+<section id="fase">
+  <div class="container">
+    <div class="section-header reveal">
+      <div>
+        <span class="s-label">03 — Dinamika Orbit</span>
+        <h2 class="s-title">Gerakan & Fase Bulan</h2>
+      </div>
+    </div>
+    <div class="phase-row reveal">
+      <div class="phase-box">
+        <div class="phase-icon p0"></div>
+        <span class="phase-n">Hari 0</span>
+        <div class="phase-nm">Bulan Baru</div>
+        <div class="phase-day">New Moon</div>
+      </div>
+      <div class="phase-box">
+        <div class="phase-icon p1"></div>
+        <span class="phase-n">Hari 4</span>
+        <div class="phase-nm">Sabit Awal</div>
+        <div class="phase-day">Waxing Crescent</div>
+      </div>
+      <div class="phase-box">
+        <div class="phase-icon p2"></div>
+        <span class="phase-n">Hari 7</span>
+        <div class="phase-nm">Perbani Awal</div>
+        <div class="phase-day">First Quarter</div>
+      </div>
+      <div class="phase-box">
+        <div class="phase-icon p3"></div>
+        <span class="phase-n">Hari 11</span>
+        <div class="phase-nm">Cembung Awal</div>
+        <div class="phase-day">Waxing Gibbous</div>
+      </div>
+      <div class="phase-box">
+        <div class="phase-icon p4"></div>
+        <span class="phase-n">Hari 15</span>
+        <div class="phase-nm">Purnama</div>
+        <div class="phase-day">Full Moon</div>
+      </div>
+      <div class="phase-box">
+        <div class="phase-icon p5"></div>
+        <span class="phase-n">Hari 18</span>
+        <div class="phase-nm">Cembung Akhir</div>
+        <div class="phase-day">Waning Gibbous</div>
+      </div>
+      <div class="phase-box">
+        <div class="phase-icon p6"></div>
+        <span class="phase-n">Hari 22</span>
+        <div class="phase-nm">Perbani Akhir</div>
+        <div class="phase-day">Last Quarter</div>
+      </div>
+      <div class="phase-box">
+        <div class="phase-icon p7"></div>
+        <span class="phase-n">Hari 26</span>
+        <div class="phase-nm">Sabit Akhir</div>
+        <div class="phase-day">Waning Crescent</div>
+      </div>
+    </div>
+    <div class="cycle-info reveal">
+      <div class="ci-item">
+        <span class="ci-val">29,5 hari</span>
+        <span class="ci-k">Periode sinodis (fase penuh)</span>
+      </div>
+      <div class="ci-item">
+        <span class="ci-val">27,3 hari</span>
+        <span class="ci-k">Periode sideris (orbit penuh)</span>
+      </div>
+      <div class="ci-item">
+        <span class="ci-val">1 : 1</span>
+        <span class="ci-k">Rasio rotasi : revolusi (terkunci)</span>
+      </div>
+    </div>
+    <div style="margin-top:2.5rem;" class="reveal">
+      <p class="rotasi-note">
+        <strong>Rotasi Sinkron</strong> — Bulan berputar pada porosnya dengan kecepatan yang persis sama dengan orbitnya mengelilingi Bumi. Akibatnya, kita di Bumi <em>selalu</em> melihat sisi yang sama dari Bulan. Sisi jauh Bulan (far side) baru pertama kali difoto oleh wahana Soviet Luna 3 pada 1959.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- PENGARUH -->
+<section id="pengaruh">
+  <div class="container">
+    <div class="section-header reveal">
+      <div>
+        <span class="s-label" style="color:rgba(242,239,232,.6);">04 — Dampak terhadap Bumi</span>
+        <h2 class="s-title">Mengapa Bulan Penting?</h2>
+      </div>
+    </div>
+  </div>
+  <div class="p-grid reveal">
+    <div class="p-card">
+      <div class="p-num">01</div>
+      <span class="p-card-ico">🌊</span>
+      <div class="p-card-t">Pasang Surut Air Laut</div>
+      <p class="p-card-d">Gravitasi Bulan menarik massa air di lautan, menciptakan tonjolan pasang yang mengikuti posisi Bulan. Di kebanyakan tempat, pasang dan surut terjadi dua kali sehari — vital bagi ekosistem pesisir, navigasi kapal, dan aktivitas nelayan di seluruh dunia.</p>
+    </div>
+    <div class="p-card">
+      <div class="p-num">02</div>
+      <span class="p-card-ico">🌀</span>
+      <div class="p-card-t">Stabilisasi Sumbu Bumi</div>
+      <p class="p-card-d">Tanpa Bulan, sumbu rotasi Bumi akan bergoyang kacau antara 0° hingga 85° dalam jutaan tahun — membuat iklim tidak terprediksi. Bulan menjaga sumbu Bumi tetap di sekitar 23,5°, memungkinkan pergantian musim yang teratur.</p>
+    </div>
+    <div class="p-card">
+      <div class="p-num">03</div>
+      <span class="p-card-ico">🔄</span>
+      <div class="p-card-t">Memperlambat Rotasi Bumi</div>
+      <p class="p-card-d">Gesekan pasang surut perlahan memperlambat rotasi Bumi. Jutaan tahun lalu, sehari di Bumi hanya 18 jam. Saat ini rotasi Bumi melambat ~1,4 milidetik per abad, dan energinya ditransfer ke orbit Bulan yang membuat Bulan menjauh ~3,8 cm/tahun.</p>
+    </div>
+    <div class="p-card">
+      <div class="p-num">04</div>
+      <span class="p-card-ico">🌱</span>
+      <div class="p-card-t">Pengaruh pada Kehidupan</div>
+      <p class="p-card-d">Banyak organisme laut menggunakan siklus lunar untuk reproduksi — terumbu karang melepaskan telur serentak saat bulan purnama. Beberapa spesies ikan, kepiting, dan serangga mengatur migrasi dan perkawinan berdasarkan fase bulan.</p>
+    </div>
+  </div>
+</section>
+
+<!-- GERHANA -->
+<section id="gerhana">
+  <div class="container">
+    <div class="section-header reveal">
+      <div>
+        <span class="s-label">05 — Fenomena Langit</span>
+        <h2 class="s-title">Gerhana</h2>
+      </div>
+    </div>
+    <div class="reveal">
+      <p class="gerhana-intro">
+        Kebetulan kosmik yang luar biasa: ukuran tampak Bulan dari Bumi hampir sama persis dengan ukuran tampak Matahari (keduanya ~0,5°). Inilah yang memungkinkan gerhana Matahari total — fenomena unik di tata surya kita.
+      </p>
+    </div>
+    <div class="eclipse-vis reveal">
+      <div class="e-body e-sun">☀</div>
+      <div class="e-arrow">→</div>
+      <div class="e-body e-moon-e">☽</div>
+      <div class="e-arrow">→</div>
+      <div class="e-body e-earth">🌍</div>
+    </div>
+    <p class="eclipse-caption">GERHANA MATAHARI: BULAN DI ANTARA MATAHARI DAN BUMI</p>
+    <div class="eclipse-types reveal">
+      <div class="et-card">
+        <div class="et-t">Gerhana Matahari Total</div>
+        <p class="et-d">Bulan menutupi seluruh piringan Matahari. Hanya terlihat dari jalur sempit di permukaan Bumi (umbra). Berlangsung maksimal 7,5 menit. Fenomena paling langka dan menakjubkan.</p>
+      </div>
+      <div class="et-card">
+        <div class="et-t">Gerhana Bulan Total</div>
+        <p class="et-d">Bumi menghalangi cahaya Matahari ke Bulan sepenuhnya. Bulan tampak merah-oranye ("Blood Moon") karena cahaya Matahari dibiaskan atmosfer Bumi. Terlihat dari separuh Bumi.</p>
+      </div>
+      <div class="et-card">
+        <div class="et-t">Gerhana Cincin (Annular)</div>
+        <p class="et-d">Terjadi saat Bulan di titik terjauh (apogee) sehingga tampak lebih kecil — tidak bisa menutupi seluruh Matahari dan meninggalkan cincin api di sekelilingnya.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EKSPLORASI -->
+<section id="eksplorasi">
+  <div class="container">
+    <div class="section-header reveal">
+      <div>
+        <span class="s-label">06 — Sejarah Penjelajahan</span>
+        <h2 class="s-title">Manusia & Bulan</h2>
+      </div>
+    </div>
+    <div class="timeline reveal">
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <span class="tl-year">1959</span>
+        <div class="tl-title">Luna 2 — Objek Buatan Pertama di Bulan</div>
+        <p class="tl-desc">Wahana Soviet Luna 2 menjadi benda buatan manusia pertama yang mencapai permukaan Bulan pada 14 September 1959. Setahun kemudian, Luna 3 memotret sisi jauh Bulan untuk pertama kali.</p>
+        <span class="tl-badge">USSR · 1959</span>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <span class="tl-year">1969</span>
+        <div class="tl-title">Apollo 11 — Pendaratan Manusia Pertama</div>
+        <p class="tl-desc">Neil Armstrong dan Buzz Aldrin mendarat di Mare Tranquillitatis pada 20 Juli 1969. Armstrong menjadi manusia pertama yang menapakkan kaki di Bulan. Michael Collins mengorbit di atas dalam modul komando Columbia.</p>
+        <span class="tl-badge">NASA · 20 Juli 1969</span>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <span class="tl-year">1969–1972</span>
+        <div class="tl-title">Program Apollo — 6 Pendaratan Sukses</div>
+        <p class="tl-desc">NASA berhasil mendarat di Bulan sebanyak enam kali. Total 12 astronaut berjalan di permukaan Bulan. Mereka membawa pulang 382 kg sampel batuan dan tanah lunar yang masih diteliti hingga hari ini.</p>
+        <span class="tl-badge">NASA · 1969–1972</span>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <span class="tl-year">2013</span>
+        <div class="tl-title">Chang'e 3 — Pendaratan Lunak China Pertama</div>
+        <p class="tl-desc">China menjadi negara ketiga yang berhasil mendarat lunak di Bulan dengan wahana Chang'e 3 beserta rover Yutu. Pada 2019, Chang'e 4 mendarat di sisi jauh Bulan untuk pertama kali dalam sejarah.</p>
+        <span class="tl-badge">CNSA · 2013</span>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <span class="tl-year">2024–kini</span>
+        <div class="tl-title">Artemis & Era Baru Eksplorasi Bulan</div>
+        <p class="tl-desc">Program Artemis NASA bertujuan mengembalikan manusia ke Bulan, termasuk wanita pertama dan astronaut internasional. Gateway — stasiun luar angkasa lunar — direncanakan mengorbit Bulan. China, India, Jepang, dan UEA juga aktif dalam eksplorasi Bulan.</p>
+        <span class="tl-badge">GLOBAL · 2024–</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAKTA -->
+<section id="fakta">
+  <div class="container">
+    <div class="section-header reveal">
+      <div>
+        <span class="s-label" style="color:var(--moon);">07 — Yang Mungkin Belum Kamu Tahu</span>
+        <h2 class="s-title">Fakta Mengejutkan</h2>
+      </div>
+    </div>
+    <div class="facts-bento reveal">
+      <div class="fb fb-big">
+        <span class="fb-icon">👣</span>
+        <div class="fb-t">Jejak Kaki yang Abadi</div>
+        <p class="fb-d">Jejak kaki Armstrong dan Aldrin di permukaan Bulan akan tetap ada selama jutaan tahun ke depan. Tanpa atmosfer, tidak ada angin, hujan, atau proses erosi apapun yang bisa menghapusnya. Satu-satunya ancaman adalah hantaman mikrometeorit yang sangat lambat.</p>
+        <div class="fb-bg">👣</div>
+      </div>
+      <div class="fb">
+        <span class="fb-icon">🌑</span>
+        <div class="fb-t">Langit Selalu Hitam</div>
+        <p class="fb-d">Di Bulan, langit selalu hitam bahkan saat siang hari. Tanpa atmosfer, tidak ada hamburan cahaya — Matahari dan bintang tampak bersamaan di langit hitam.</p>
+        <div class="fb-bg">🌑</div>
+      </div>
+      <div class="fb">
+        <span class="fb-icon">🔇</span>
+        <div class="fb-t">Dunia yang Sunyi</div>
+        <p class="fb-d">Di permukaan Bulan tidak ada suara sama sekali. Gelombang suara butuh medium untuk merambat. Di vakum Bulan, ledakan sebesar apapun tidak akan terdengar.</p>
+        <div class="fb-bg">🔇</div>
+      </div>
+      <div class="fb">
+        <span class="fb-icon">💧</span>
+        <div class="fb-t">Ada Air di Bulan!</div>
+        <p class="fb-d">Pada 2009, NASA mengkonfirmasi keberadaan es air di kawah kutub selatan Bulan yang tidak pernah terpapar sinar Matahari. Es ini bisa dikonversi menjadi air minum dan bahan bakar roket untuk misi masa depan.</p>
+        <div class="fb-bg">💧</div>
+      </div>
+      <div class="fb">
+        <span class="fb-icon">📡</span>
+        <div class="fb-t">Laser Reflektor</div>
+        <p class="fb-d">Astronaut Apollo meninggalkan retro-reflektor laser di Bulan. Ilmuwan di Bumi masih menembakkan laser ke reflektor ini setiap hari untuk mengukur jarak Bumi–Bulan dengan presisi milimeter.</p>
+        <div class="fb-bg">📡</div>
+      </div>
+      <div class="fb fb-big">
+        <span class="fb-icon">🌍</span>
+        <div class="fb-t">Bulan Semakin Menjauh</div>
+        <p class="fb-d">Akibat gesekan pasang surut, Bulan menjauh dari Bumi ~3,8 cm per tahun. Miliaran tahun lalu, Bulan jauh lebih dekat dan terlihat jauh lebih besar. Di masa depan yang sangat jauh, gerhana Matahari total tidak akan mungkin terjadi lagi karena Bulan terlalu kecil untuk menutupi Matahari.</p>
+        <div class="fb-bg">🌍</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MASA DEPAN -->
+<section id="future">
+  <div class="container">
+    <div class="future-inner reveal">
+      <div>
+        <div class="future-big">MASA<br>DEPAN<br><span>EKSPLO<br>RASI</span></div>
+      </div>
+      <div class="future-list">
+        <div class="fl-item">
+          <div class="fl-t">🚀 Artemis III — NASA</div>
+          <p class="fl-d">Misi pertama yang akan mengembalikan manusia ke permukaan Bulan sejak Apollo 17 (1972), dengan target kawah kutub selatan yang kaya es.</p>
+        </div>
+        <div class="fl-item">
+          <div class="fl-t">🛸 Lunar Gateway</div>
+          <p class="fl-d">Stasiun luar angkasa kecil yang akan mengorbit Bulan sebagai pos transit untuk misi ke permukaan Bulan dan ke Mars di masa depan.</p>
+        </div>
+        <div class="fl-item">
+          <div class="fl-t">🇨🇳 Chang'e 7 & Misi Berawak China</div>
+          <p class="fl-d">China menargetkan pendaratan manusia di Bulan sebelum 2030, termasuk pembangunan pangkalan riset di kutub selatan bersama Rusia.</p>
+        </div>
+        <div class="fl-item">
+          <div class="fl-t">🏗️ Pangkalan Lunar Permanen</div>
+          <p class="fl-d">Berbagai lembaga antariksa berencana membangun habitat jangka panjang di Bulan sebagai batu loncatan menuju Mars dan eksplorasi tata surya yang lebih jauh.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <span class="footer-logo">☽ LUNA</span>
+    <div class="footer-info">
+      <div>Ensiklopedia Interaktif Bulan</div>
+      <div class="footer-sub">Materi IPAS · Satelit Alami Bumi · 2025</div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
