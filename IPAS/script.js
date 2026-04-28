@@ -4,11 +4,19 @@
    ============================================================ */
 
 // ── CUSTOM CURSOR ──────────────────────────────────────────
-const cur = document.getElementById('cur');
+// ── SIMPLE CLICK EFFECT ──────────────────────────
+document.addEventListener('click', (e) => {
+  const ripple = document.createElement('span');
 
-document.addEventListener('mousemove', (e) => {
-  cur.style.left = e.clientX + 'px';
-  cur.style.top  = e.clientY + 'px';
+  ripple.className = 'click-effect';
+  ripple.style.left = e.clientX + 'px';
+  ripple.style.top = e.clientY + 'px';
+
+  document.body.appendChild(ripple);
+
+  setTimeout(() => {
+    ripple.remove();
+  }, 500);
 });
 
 // Enlarge cursor on hover over interactive elements
@@ -63,8 +71,14 @@ const sectionObserver = new IntersectionObserver((entries) => {
     if (entry.isIntersecting) {
       const id = entry.target.getAttribute('id');
       navLinks.forEach((link) => {
-        link.style.opacity = link.getAttribute('href') === `#${id}` ? '1' : '0.6';
-      });
+  if (link.getAttribute('href') === `#${id}`) {
+    link.style.opacity = '1';
+    link.style.color = '#f2efe8';
+  } else {
+    link.style.opacity = '0.6';
+    link.style.color = '';
+  }
+});
     }
   });
 }, { threshold: 0.4 });
